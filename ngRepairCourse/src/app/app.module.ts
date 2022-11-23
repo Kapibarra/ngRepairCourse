@@ -12,6 +12,8 @@ import { FirstLessonComponent } from './homepage/shared/components/first-lesson/
 import { GalleryComponent } from './homepage/shared/components/gallery/gallery.component';
 import { MarketComponent } from './homepage/shared/components/market/market.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
+import { HeaderComponent } from './homepage/shared/components/header/header.component';
+import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
     FirstLessonComponent,
     GalleryComponent,
     MarketComponent,
-    ContactsComponent
+    ContactsComponent,
+    HeaderComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
