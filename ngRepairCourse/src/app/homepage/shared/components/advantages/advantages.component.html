@@ -3,11 +3,10 @@
         учитесь у <span class="highlighted">профессионалов</span>
     </div>
     <div class="advantage">
-        <div class="advantage__card">
-            <div class="advantage__card-number">01</div>
-            <div class="advantage__card-title highlighted">ВЫСОКАЯ ЗАРПЛАТА</div>
-            <div class="advantage__card-description">Увеличьте свой заработок, начав работать в сфере ремонта и
-                обслуживания электронной техники: это всегда востребованная и хорошо оплачиваемая сфера.
+        <div class="advantage__card" *ngFor="let advantage of advantages" [ngClass]="{bgPurple : advantage.fillBg}">
+            <div class="advantage__card-number">{{advantage.id}}</div>
+            <div class="advantage__card-title highlighted" [ngClass]="{light : advantage.fillBg}">{{advantage.title}}</div>
+            <div class="advantage__card-description">{{advantage.description}}
             </div>
             <div class="advantage__card-mini-icon"></div>
         </div>
