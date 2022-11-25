@@ -51,6 +51,24 @@ export class MarketComponent implements OnInit {
     price: 1000,
     image: 'assets/imgs/products01.png'
   },
+  {
+    id: 1,
+    title: 'title',
+    price: 1000,
+    image: 'assets/imgs/products01.png'
+  },
+  {
+    id: 1,
+    title: 'title',
+    price: 1000,
+    image: 'assets/imgs/products01.png'
+  },
+  {
+    id: 1,
+    title: 'title',
+    price: 1000,
+    image: 'assets/imgs/products01.png'
+  },
   ]
   constructor() { }
 
