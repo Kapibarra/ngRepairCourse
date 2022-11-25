@@ -19,6 +19,7 @@ box-sizing: border-box;
             color: #FFFFFF;
             text-align: center;
             padding-bottom: 80px;
+            
         }
     }
     & .about__image  img{
@@ -30,6 +31,7 @@ box-sizing: border-box;
         @media screen and (max-width:428px) {
 width: 100%;
 max-width: 100%;
+margin-top: 40px;
         }
     }
     & .about__inner-wrapper {
@@ -50,6 +52,10 @@ max-width: 100%;
                 text-transform: uppercase;
                 color: #FFFFFF;
                 padding-bottom: 40px;
+                @media screen and (max-width:428px) {
+                    font-size: 32px !important;
+                    line-height: 36px!important;
+                }
             }
 
             & .about__content-text {
@@ -60,7 +66,10 @@ max-width: 100%;
                 line-height: 29px;
                 text-transform: uppercase;
                 color: #FFFFFF;
-
+                @media screen and (max-width:428px) {
+                    font-size: 18px !important;
+                    line-height: 24px!important;
+                }
             }
         }
     }
