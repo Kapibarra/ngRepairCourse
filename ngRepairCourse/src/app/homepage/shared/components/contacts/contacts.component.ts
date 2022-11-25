@@ -1,3 +1,4 @@
+import { Constants } from './../../constants';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-
+  phoneNumber: string = Constants.phone;
   constructor() { }
 
   ngOnInit(): void {
