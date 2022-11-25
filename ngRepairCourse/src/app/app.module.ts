@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
+import {MatIconModule} from '@angular/material/icon';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,7 @@ import { MarketComponent } from './homepage/shared/components/market/market.comp
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { HeaderComponent } from './homepage/shared/components/header/header.component';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { BurgerComponent } from './homepage/shared/components/burger/burger.comp
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

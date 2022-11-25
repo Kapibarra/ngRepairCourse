@@ -17,6 +17,7 @@
         <div class="header__aside">
             <div class="header__phone-wrapper" *ngIf="!mobile">
                 <div class="header__phone">
+                    <mat-icon aria-hidden="false" class="header__phone--icon">phone</mat-icon>
                     <a class="header__phone--number" href="tel:{{phoneNumber}}">{{phoneNumber}}</a>
                 </div>
                 <div class="header__phone--text">Ежедневно с 10:00 до 22:00</div>
