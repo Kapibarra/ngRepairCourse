@@ -1,3 +1,73 @@
+.lesson {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1700px;
+    background: #202020;
+    box-shadow: 0px 0px 10px 3px #5959FA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 80px;
+
+    & .lesson__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 140%;
+        /* identical to box height, or 90px */
+
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+
+        @media screen and (max-width:1628px) {
+            flex-direction: column;
+        }
+    }
+
+    & .lesson__subtitle {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 99%;
+        /* or 20px */
+
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+
+        color: #EEEEEE;
+        margin-bottom: 50px;
+    }
+
+    & .lesson__list {
+        list-style-image: url(../../../../../assets/icons/list-icon.png);
+        padding-inline-start: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        /* or 34px */
+
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
+
+
 .main__button {
     margin-top: 50px;
     margin-bottom: 50px;

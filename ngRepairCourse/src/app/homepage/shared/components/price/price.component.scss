@@ -16,12 +16,17 @@
         /* white */
 
         color: #FFFFFF;
+        margin-bottom: 120px;
     }
 
     & .price {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width: 100%;
+        max-width: 1540px;
+        margin: 0 auto;;
+        gap: 25px;
 
         & .price__card {
             background: #333333;

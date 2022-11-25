@@ -1,1 +1,24 @@
-<p>market works!</p>
+<div class="product__wrapper">
+    <div class="product__title">
+      <h2>купить <span class="highlighted">технику</span> у нас  </h2>
+    </div>
+    <div class="product">
+      <swiper [config]="config" class="mySwiper">
+        <ng-container *ngFor="let product of products">
+          <ng-template swiperSlide
+            ><div class="product__item">
+              <div class="product__item-image">
+                <img src="{{ product.image }}" />
+              </div>
+              <div class="product__item-title">
+                {{ product.title | uppercase }}
+              </div>
+              <div class="product__item-price">{{product.price | currency: "RUB":"symbol":"1.0"}}</div>
+            </div>
+            </ng-template
+          >
+        </ng-container>
+      </swiper>
+    </div>
+  </div>
+  
