@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor(private viewportscroller: ViewportScroller) { }
 
   ngOnInit(): void {
-    if (window.screen.width <= 968) {
+    if (window.screen.width <= 768) {
       this.mobile = true;
       console.log(this.mobile);
     }

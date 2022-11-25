@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Constants } from './../../constants';
+import { ViewportScroller } from '@angular/common';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-burger',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BurgerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewportscroller: ViewportScroller) { }
 
-  ngOnInit(): void {
+  active = false;
+  phoneNumber: string = Constants.phone;
+  @Input() init!: boolean;
+  @Output() opened = new EventEmitter<any>();
+  ngOnInit() {
+    this.active = this.init || false;
+  }
+  onBurgerClicked() {
+    this.active = !this.active;
+    this.opened.emit();
   }
 
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
+    
+     }
 }

@@ -1,4 +1,4 @@
 export class Constants {
-    public static phone: string = '+7 495 777 10 68';
+    public static phone: string = '+7 999 777 99 88';
   }
   
