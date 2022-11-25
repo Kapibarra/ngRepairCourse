@@ -3,7 +3,7 @@ $white: #ffffff;
 $grey: #777777;
 $black: #333333;
 $lightgrey: #f2f5f7;
-$iris: #5d5fef;
+$iris: #5959FA;
 $smoothiris: #a5a6f6;
 $pink: #f178b6;
 $link: #005b95;
@@ -28,7 +28,7 @@ $burgerBarColor: $white;
     width: 100%;
     max-width: 280px;
     height: $burgerWidth;
-    margin-right: 24px;
+    margin-right: 50px;
     // margin-top: 8px;
     box-sizing: border-box;
     display: flex;
@@ -115,7 +115,7 @@ $burgerBarColor: $white;
         z-index: 9;
         top: 0;
         right: 0;
-        background: rgba($iris, 0.98);
+        background: linear-gradient(129.12deg, #5959FA 15.4%, #C89AFC 94.71%);
         height: 100vh;
         width: 100%;
         max-width: 414px;
@@ -198,6 +198,17 @@ color: #FFFFFF;
 .burger__copyright {
     text-align: center;
     margin-top: 30%;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 140%;
+/* or 50px */
+
+letter-spacing: -0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
     & a {
         color: $white;
         text-decoration: unset;
