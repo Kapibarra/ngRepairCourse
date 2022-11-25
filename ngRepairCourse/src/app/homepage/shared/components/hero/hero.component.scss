@@ -78,5 +78,16 @@
         & .hero__image {
             margin-top: 140px;
         }
+        & .hero__image  img{
+            display: flex;
+            align-self: flex-start;
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            @media screen and (max-width:428px) {
+    width: 100%;
+    max-width: 100%;
+            }
+        }
     }
 }

@@ -28,6 +28,10 @@
         max-width: 1540px;
         margin: 0 auto;;
         gap: 25px;
+        @media screen and (max-width:968px) {
+            gap: 100px;
+            justify-content: center;
+        }
 
         & .price__card {
             background: #333333;
@@ -35,6 +39,9 @@
             width: 100%;
             max-width: 480px;
             box-sizing: border-box;
+            @media screen and (max-width:968px) {
+                margin: 0 auto;
+            }
 
             & .price__card-img {
                 margin: 0 auto;
@@ -70,6 +77,10 @@
                     & img {
                         display: inline-block;
                     }
+                    @media screen and (max-width:428px) {
+                        font-size: 16px;
+                    }
+                    
                 }
             }
 

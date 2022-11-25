@@ -26,6 +26,9 @@
         flex-wrap: wrap;
         margin: 0 auto;
 margin-top: 60px;
+@media screen and (max-width:968px) {
+    justify-content: center;
+}
 
         & .advantage__card {
             box-sizing: border-box;
@@ -40,6 +43,9 @@ position: relative;
             margin-right: -10px;
             box-shadow: 0px 0px 0px 0px #5959FA;
             transition: all 0.3s ease-in-out;
+            @media screen and (max-width:968px) {
+                margin-top: -10px;
+            }
             &:hover {
                 cursor: pointer;
                 background-color: rgba(#c89afc, 0.02);

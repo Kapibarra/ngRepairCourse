@@ -18,7 +18,17 @@
             padding-bottom: 80px;
         }
     }
-
+    & .about__image  img{
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+        max-width: 900px;
+        @media screen and (max-width:428px) {
+width: 100%;
+max-width: 100%;
+        }
+    }
     & .about__inner-wrapper {
         display: flex;
         flex-direction: row;
