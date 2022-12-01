@@ -172,5 +172,8 @@ color: #C89AFC;
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
+    @media screen and (max-width: 428px) {
+      flex-direction: column;
+    }
 }
 }
