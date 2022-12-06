@@ -58,11 +58,16 @@ font-size: 22px;
 line-height: 40px;
 /* identical to box height, or 182% */
 
-text-decoration-line: underline;
+text-decoration-line: none;
 
 color: #EEEEEE;
 margin-bottom: 35px;
 margin-top: 10px;
+transition: all 250ms ease-in-out;
+    &:hover {
+        transition: all 250ms ease-in-out;
+        color: #5959FA;
+    }
             }
         }
     }

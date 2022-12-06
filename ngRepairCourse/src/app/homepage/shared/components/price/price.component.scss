@@ -4,6 +4,9 @@
 padding-left: 10px;
 box-sizing: border-box;
 
+& a {
+    text-decoration: none;
+}
     & .price__title {
         font-family: 'Montserrat';
         font-style: normal;
