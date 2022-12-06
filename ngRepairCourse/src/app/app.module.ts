@@ -18,6 +18,7 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
 import { HeaderComponent } from './homepage/shared/components/header/header.component';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AsideComponent } from './homepage/shared/components/aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MarketComponent,
     ContactsComponent,
     HeaderComponent,
-    BurgerComponent
+    BurgerComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,
